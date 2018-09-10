@@ -1,0 +1,65 @@
+<html>
+	<head>
+
+		<!-- spotlight para la luz  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>La galaxia de Margot</title>
+
+		<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css" />
+		<link rel="stylesheet" href="libs/colorpicker/css/colorpicker.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/threejsmaterials.css" />
+
+		<script src="libs/jquery-3.3.1/jquery-3.3.1.js"></script>
+		<script src="libs/jquery-ui/jquery-ui.js"></script>
+		<script src="libs/three.js/three.js"></script>
+
+
+		<script src="libs/colorpicker/js/colorpicker.js"></script>
+
+		<script src="threejsMaterials.js"></script>
+		<script src="sceneHandlers.js"></script>
+
+		<script type="text/javascript">
+
+		$(document).ready(
+					function() {
+
+						var canvas = document.getElementById("webglcanvas");
+
+						// create the scene
+						createScene(canvas);
+
+						// add mouse handling so we can rotate the scene
+						addMouseHandler(canvas);
+
+						// initialize the controls
+						initControls();
+
+						// Run the run loop
+						run();
+					}
+			);
+
+		</script>
+
+	</head>
+	<body>
+
+		<div id="container">
+			<canvas id="webglcanvas" style="background: url('images/unv.jpg')" width=800 height=600></canvas>
+			<div id="title">
+				Three.js Materials
+			</div>
+			<div id="prompt">
+				Drag the mouse to rotate the scene<br>Drag the slider to scale.
+			</div>
+			<div id="status">
+				<div id="rotation">rotation: 0,0,0</div>
+				<div id="scale">scale: 1</div>
+			</div>
+			<div id="slider"></div>
+		</div>
+
+	</body>
+</html>
