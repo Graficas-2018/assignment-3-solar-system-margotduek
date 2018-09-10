@@ -217,8 +217,12 @@ function createScene(canvas)
       specular: 0x000000
     });
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 0, -4);
-    mesh.rotation.x = Math.PI / 2;
+    mesh.position.set(1, 0, -4);
+    mesh.rotation.x = 0 * (Math.PI/180);
+    mesh.rotation.y = 0 * (Math.PI/180);
+    mesh.rotation.z = 33 * (Math.PI/180);
+
+    // mesh.rotation.x = Math.PI / 2;
     venus.add(mesh);
     solar_system.add( venus );
 
@@ -234,7 +238,7 @@ function createScene(canvas)
       specular: 0x000000
     });
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 0, -5);
+    mesh.position.set(-1, 0, -5);
     mesh.rotation.x = Math.PI / 2;
     earth.add(mesh);
     solar_system.add( earth );
@@ -250,7 +254,7 @@ function createScene(canvas)
       specular: 0x000000
     });
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 0, -6);
+    mesh.position.set( 3, 0, -5.2);
     mesh.rotation.x = Math.PI / 2;
     mars.add(mesh);
     solar_system.add( mars );
@@ -265,7 +269,7 @@ function createScene(canvas)
       specular: 0x000000
     });
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 0, -7);
+    mesh.position.set(6, 0, -3.5);
     mesh.rotation.x = Math.PI / 2;
     jupiter.add(mesh);
     solar_system.add( jupiter );
@@ -281,7 +285,7 @@ function createScene(canvas)
     });
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(0, 0, -8);
-    mesh.rotation.x = Math.PI / 2;
+    mesh.rotation.x = Math.PI / 33;
     saturn.add(mesh);
     solar_system.add( saturn );
 
