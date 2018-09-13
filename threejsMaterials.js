@@ -270,7 +270,7 @@ function createScene(canvas)
     });
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(6, 0, -3.5);
-    mesh.rotation.x = Math.PI / 2;
+    mesh.rotation.x = 7* Math.PI / 2;
     jupiter.add(mesh);
     solar_system.add( jupiter );
 
@@ -284,8 +284,8 @@ function createScene(canvas)
       specular: 0x000000
     });
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 0, -8);
-    mesh.rotation.x = Math.PI / 33;
+    mesh.position.set(2, 0, -7.6);
+    mesh.rotation.x = 1;
     saturn.add(mesh);
     solar_system.add( saturn );
 
@@ -299,7 +299,7 @@ function createScene(canvas)
       specular: 0x000000
     });
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 0, -9);
+    mesh.position.set(4, 0, -8);
     mesh.rotation.x = Math.PI / 2;
     uranus.add(mesh);
     solar_system.add( uranus );
@@ -332,7 +332,7 @@ function createScene(canvas)
       specular: 0x000000
     });
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.set(0, 0, -11);
+    mesh.position.set(-1, 0, -11);
     mesh.rotation.x = Math.PI / 2;
     pluto.add(mesh);
     solar_system.add( pluto );
